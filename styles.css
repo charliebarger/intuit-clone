@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  font-family: "Roboto", sans-serif;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eceef1;
+}
+
+aside {
+  display: none;
+  padding: 10px 30px;
+}
+
+.lock-button {
+  margin-left: 10px;
+  background: red;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 17.5px;
+  background: #0077c5;
+  color: white;
+  border: 1px solid #4c4c4c;
+  border-radius: 3px;
+}
+
+.svg-wrap {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 26.6px;
+}
+
+.lock-button > svg {
+}
+
+.lock-button > span {
+  display: block;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.login-info {
+  font-size: 12.5px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: #505050;
+  font-weight: 300;
+}
+
+.login-info > a {
+  text-decoration: none;
+  color: #0077c5;
+}
+
+@media screen and (min-width: 767px) {
+  aside {
+    display: flex;
+  }
+}
