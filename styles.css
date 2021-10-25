@@ -22,6 +22,7 @@ aside {
 }
 
 .lock-button {
+  cursor: pointer;
   margin-left: 10px;
   background: red;
   display: flex;
@@ -105,6 +106,7 @@ header {
 }
 
 .logo {
+  cursor: pointer;
   padding-bottom: 10px;
 }
 
@@ -130,7 +132,8 @@ header {
   margin-bottom: 20px;
 }
 
-.intuit-form > * {
+.intuit-form > *,
+form > * {
   margin-bottom: 20px;
 }
 
@@ -170,7 +173,8 @@ header {
   border: 1px solid rgba(82, 168, 236, 0.8);
 }
 
-.intuit-form > label {
+.intuit-form > form > label {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,14 +182,16 @@ header {
   font-size: 14px;
 }
 
-.intuit-form > label > input {
+.intuit-form .input-wrapper {
   margin-top: 10px;
+  width: 320px;
 }
 
-.creat-account {
+.create-account {
   width: 100%;
   display: flex;
   margin: 0;
+  margin-top: 30px;
   border: none;
   justify-content: center;
   padding: 6px 12px;
@@ -236,6 +242,7 @@ header {
   font-size: 14px;
   margin: auto;
   width: 90%;
+  max-width: 715px;
   line-height: 20px;
   padding-bottom: 0px;
 }
@@ -268,8 +275,34 @@ header {
   font-weight: 300;
 }
 
+.alert {
+  background: #505050;
+  position: absolute;
+  top: 0px;
+  right: -214px;
+  color: white;
+  border-radius: 3px;
+  font-size: 13px;
+  display: none;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+form.user-data {
+  margin: 0;
+}
+
 @media screen and (min-width: 767px) {
   aside {
+    display: flex;
+  }
+
+  .form-input:focus ~ .alert {
     display: flex;
   }
 }

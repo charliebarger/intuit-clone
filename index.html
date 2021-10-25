@@ -68,36 +68,49 @@
             </section>
         </header>
         <section class="form-section">
-            <form class="intuit-form" action="">
+            <div class="intuit-form" action="">
                 <h1>Create an Intuit account</h1>
                 <div class="form-top">
                     <span>One account for everything Intuit, including Mint</span>
                     <a href="https://accounts-help.intuit.com/app/intuit/1995107" target="_blank">Learn more</a>
-                    <!-- <div class="sign-in">
-                        <span>Already have an account? </span>
-                        <a
-                            href="https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">Sign
-                            In</a>
-                    </div> -->
                 </div>
-                <label>Email address
-                    <input name="email" class="form-input" />
-                </label>
-                <label>Phone
-                    <input name="email" class="form-input" />
-                </label>
-                <label>Password
-                    <input name="email" class="form-input" />
-                </label>
-                <button class="lock-button creat-account">
-                    <div class="svg-wrap">
-                        <svg viewBox="0 0 24 24">
-                            <use xlink:href="./images/lock-icon.svg#lock-icon" />
-                        </svg>
-                    </div>
-                    <span>Create Account
-                    </span>
-                </button>
+                <form class="user-data">
+                    <label>Email address
+                        <div class="input-wrapper">
+                            <input type="email" name="email" class="form-input " />
+                            <div class="alert">
+                                <span>You'll use this as your user ID</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label>Phone
+                        <div class="input-wrapper">
+                            <input type="phone" name="phone" class="form-input " />
+                            <div class="alert">
+                                <span>Create a password you've never used before. This will help keep your account
+                                    safe.</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label>Password
+                        <div class="input-wrapper">
+                            <input type="password" name="password" class="form-input" />
+                            <div class="alert">
+                                <span>Create a password you've never used before. This will help keep your account
+                                    safe.</span>
+                            </div>
+                        </div>
+                    </label>
+                    <button class="lock-button create-account">
+                        <div class="svg-wrap">
+                            <svg viewBox="0 0 24 24">
+                                <use xlink:href="./images/lock-icon.svg#lock-icon" />
+                            </svg>
+                        </div>
+                        <span>Create Account
+                        </span>
+                    </button>
+                </form>
                 <p class=term-wrap>By selecting Create Account, you agree to our <a href="">Terms</a> and have read and
                     acknowledge our <a href="">Global Privacy Statement.</a>
                 </p>
@@ -106,7 +119,7 @@
                         <a href="">Terms of Use.</a>
                     </span>
                 </section>
-            </form>
+            </div>
         </section>
         <footer>
             <section class="legal">
