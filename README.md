@@ -4,7 +4,7 @@
 
 Clone of an Intuit Form made with HTML and CSS
 
-> See it Live at [charliebarger.github.io/intuit-clone/](charliebarger.github.io/intuit-clone/)
+> See it Live at [https://charliebarger.github.io/intuit-clone/](https://charliebarger.github.io/intuit-clone/)
 
 ## Demo
 
